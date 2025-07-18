@@ -1,0 +1,10 @@
+# .gitignore for CourseNotifierScript
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+*.sqlite3
+.DS_Store
+venv/

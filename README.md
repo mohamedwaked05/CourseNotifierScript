@@ -20,5 +20,5 @@ It logs in, selects the semester, navigates to the registration page, and checks
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/mohamedwaked05/CourseNotificationScript.git
-cd <CourseNotificationScript>
+git clone https://github.com/mohamedwaked05/CourseNotifierScript.git
+cd <CourseNotifierScript>
