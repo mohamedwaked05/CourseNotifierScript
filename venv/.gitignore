@@ -8,4 +8,6 @@ __pycache__/
 .vscode/
 *.sqlite3
 .DS_Store
+venv/
+
 
