@@ -1,0 +1,132 @@
+<html><head>
+		<script language="javascript">
+			var httpRefer="";
+			function poponload(filename,width,height){
+				testwindow= window.open (filename, "mywindow","toolbar=no,location=no,directories=no menubar=no,scrollbars=yes,resizable=no,status=no,width="+width+",height="+height+"");
+				testwindow.moveTo(300,300);
+
+			}
+			function fcheckLogin(){
+				var tUSER=trim(document.getElementById('USER').value);
+				var tPASS=trim(document.getElementById('PASS').value);
+				if((tUSER=='') || (tPASS=='') ){
+					document.getElementById('USER').value='';
+					document.getElementById('PASS').value='';
+					alert('Please enter your ID and password');
+					return false;
+				}
+				else
+				{
+					document.getElementById("myForm").submit();
+				}
+			}
+			function trim (sString)
+			{
+				while (sString.substring(0,1) == ' ')
+				{
+					sString = sString.substring(1, sString.length);
+				}
+				while (sString.substring(sString.length-1, sString.length) == ' ')
+				{
+					sString = sString.substring(0,sString.length-1);
+				}
+				return sString;
+			}
+		</script>
+		<link href="loginPage_files/main.css" type="text/css" rel="stylesheet">
+		<meta content="MSHTML 6.00.6000.16640" name="GENERATOR">
+		<style>
+			#resetDiv{    
+				position: relative;
+				top: 260px;
+				left: 205px;
+			}
+			#resetA{
+				    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid;
+    background: #1d5b82;
+			}
+			#resetA:hover{
+				background: #fbb034;
+				color: #333333;
+			}
+		</style>
+	</head>
+	<body background="loginPage_files/bk1.jpg">
+		
+		<div id="apDiv1">
+			<p class="note" align="left"></p>
+		</div>
+		<form autocomplete="off" method="post" action="https://syslb.liu.edu.lb/login.php" name="myForm"> 
+			<input type="hidden" name="httpRefer" value="http://www.liu.edu.lb/">
+			<table height="100%" cellspacing="0" cellpadding="0" width="100%" align="center" border="1">
+				<tbody>
+					<tr>
+						<td valign="center" align="middle">
+							<div id="resetDiv"><a id="resetA" href="resetStdPassword.php" target="_blank">Forgot my password</a></div><table height="595" cellspacing="0" cellpadding="0" width="756" border="0">
+								
+								<tbody>
+									<tr>
+										<td colspan="6"><img height="144" alt="" src="loginPage_files/login_010.jpg" width="756" border="0"></td>
+									 </tr>
+									<tr>
+										<td rowspan="8"><img height="450" alt="" src="loginPage_files/login_02.jpg" width="352" border="0"></td>
+										<td class="td_1" valign="center" align="right" width="113" background="loginPage_files/login_03.jpg" height="21">Username/ID: &nbsp;</td>
+										<td valign="center" align="right" width="179" colspan="3" height="21">
+											<input class="textfield" style="WIDTH: 177px; HEIGHT: 19px" name="USER" id="USER" required="" type="password"> 
+										</td>
+										<td rowspan="8"><img height="450" alt="" src="loginPage_files/login_05.jpg" width="112" border="0"></td>
+									</tr>
+									<tr>
+									  <td colspan="4"><img height="9" alt="" src="loginPage_files/login_06.jpg" width="292" border="0"></td>
+									</tr>
+									<tr>
+										<td class="td_1" valign="center" align="right" width="113" background="loginPage_files/login_07.jpg" height="21">Password:&nbsp;</td>
+										<td valign="center" align="right" width="179" colspan="3" height="21">
+											<input class="textfield" style="WIDTH: 177px; HEIGHT: 19px" type="password" id="PASS" required="" name="PASS"> 
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4"><img height="12" alt="" src="loginPage_files/login_09.jpg" width="292" border="0"></td>
+									</tr>
+									<tr>
+										<td colspan="2" rowspan="4"><img src="loginPage_files/login_10.jpg" alt="" width="227" height="387" border="0" usemap="#Map"></td>
+										<td width="64" height="20">
+											<input style="WIDTH: 64px; HEIGHT: 20px" onclick="fcheckLogin();" type="image" src="loginPage_files/login_11.jpg">
+										</td>
+										<td>
+											<img height="20" alt="" src="loginPage_files/login_12.jpg" border="0" width="1">
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2"><img height="46" alt="" src="loginPage_files/login_13.jpg" width="65" border="0"></td>
+									</tr>
+									<tr>
+										<td class="td_1" valign="center" align="right" width="64" background="loginPage_files/login_14.jpg" height="30"></td>
+										<td rowspan="2"><img height="321" alt="" border="0" src="loginPage_files/login_15.jpg" width="1"></td>
+									</tr>
+									<tr>
+										<td><img border="0" height="291" alt="" src="loginPage_files/login_16.jpg" width="64"></td>
+									</tr>
+									<tr>
+										<td><img height="1" alt="" src="loginPage_files/spacer.gif" border="0" width="352"></td>
+										<td><img height="1" alt="" src="loginPage_files/spacer.gif" border="0" width="113"></td>
+										<td><img height="1" alt="" src="loginPage_files/spacer.gif" border="0" width="114"></td>
+										<td><img height="1" alt="" src="loginPage_files/spacer.gif" border="0" width="64"></td>
+										<td><img height="1" alt="" src="loginPage_files/spacer.gif" border="0" width="1"></td>
+										<td><img height="1" alt="" src="loginPage_files/spacer.gif" border="0" width="112"></td>
+									</tr>
+								</tbody>
+							</table>
+							<img height="1" src="loginPage_files/pic.gif" width="1" border="0"> <!--END Counter Code-->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	
+
+</body></html>

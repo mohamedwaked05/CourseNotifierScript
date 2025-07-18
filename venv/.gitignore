@@ -1,0 +1,11 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# .gitignore for CourseNotifierScript
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+*.sqlite3
+.DS_Store
+
